@@ -31,7 +31,7 @@ jobs:
 
     - name: Convert MKV to MP4
       run: |
-        ffmpeg -i video.mkv -vf "crop=496:432:486:360" -t 5 -an video.mp4
+        ffmpeg -i video.mkv -vf "cropdetect=24:16:0,scale=-1:1080,subtitles=video.mkv:si=1" -t 35 -an video.mp4
 
 
 
