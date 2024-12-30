@@ -27,11 +27,11 @@ jobs:
 
     - name: Download MKV file
       run: |
-        curl -L -o video.mkv "https://sxtcp.tg-index.workers.dev/0:/askuidkor/Squid.Game.S01E05.A.Fair.World.1080p.NF.WEB-DL.x264.6CH-Pahe.in.mkv"
+        curl -L -o video.mkv "https://tipistream.tipikuy.workers.dev/0:/movie/Kang.Mak.from.Pee.Mak.2024.1080p.NF.WEB-DL.DDP5.1.H.264-MARKY.mkv"
 
     - name: Convert MKV to MP4
       run: |
-        ffmpeg -i video.mkv -vf "scale=-1:720,subtitles=video.mkv:si=3" -r 24 -c:v libx264 -preset fast -crf 22 -c:a aac -b:a 160k -ac 2 -af "volume=2.0" -movflags +faststart video.mp4
+        ffmpeg -i video.mkv -vf "scale=-1:1080,subtitles=video.mkv:si=1" -r 24 -c:v libx264 -preset fast -crf 22 -c:a aac -b:a 160k -ac 2 -af "volume=2.0" -movflags +faststart video.mp4
 
 
 
