@@ -31,7 +31,7 @@ jobs:
 
     - name: Convert MKV to MP4
       run: |
-        ffmpeg -i video.mkv -vf "scale=-1:720,subtitles=video.mkv:si=19" -r 24 -c:v libx264 -preset veryfast -crf 24 -c:a aac -b:a 160k -ac 2 -af "volume=2.0" -movflags +faststart video.mp4
+        ffmpeg -i video.mkv -vf "scale=-1:720,subtitles=video.mkv:si=19" -r 24 -c:v libx264 -preset veryfast -crf 24 -c:a aac -b:a 160k -ac 2 -movflags +faststart video.mp4
         
 
 
