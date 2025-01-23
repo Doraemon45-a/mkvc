@@ -27,11 +27,11 @@ jobs:
 
     - name: Download MKV file
       run: |
-        curl -L -o video.mkv "https://tipistream.tipikuy.workers.dev/0:/Gunung.Kawi.2017.1080p.NF.WEB-DL.DDP5.1.H.264-KQRM.mkv"
+        curl -L -o video.mkv "https://tipistream.tipikuy.workers.dev/0:/Bat.War.2024.1080p.NF.WEB-DL.DDP5.1.H.264-JasDon.mkv"
 
     - name: Convert MKV to MP4
       run: |
-        ffmpeg -i video.mkv -vf "crop=1920:818:0:140,scale=1920:1080,subtitles=video.mkv:si=2" -r 24 -c:v libx264 -preset veryfast -crf 22 -c:a aac -b:a 160k -ac 2 -af "volume=3.0" -movflags +faststart video.mp4
+        ffmpeg -i video.mkv -vf "scale=1920:1080,subtitles=video.mkv:si=2" -r 24 -c:v libx264 -preset veryfast -crf 22 -c:a aac -b:a 160k -ac 2 -af "volume=3.0" -movflags +faststart video.mp4
 
 
 
