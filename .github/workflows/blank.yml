@@ -27,7 +27,7 @@ jobs:
 
     - name: Download MKV file
       run: |
-        curl -L -o video.mkv "https://drive.google.com/file/d/1KKraiCOQIZ405LEuDlBTos0QpbTADBjO/view?usp=drive_link"
+        curl -L -o video.mkv "https://tipistream.tipikuy.workers.dev/0:/series/mkv/Tsuite%20-%2001.mkv"
 
     - name: Convert MKV to MP4
       run: |
