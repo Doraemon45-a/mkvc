@@ -27,7 +27,7 @@ jobs:
 
     - name: Download MKV file
       run: |
-        curl -L -o video.mkv "https://tipistream.tipikuy.workers.dev/0:/MirrorFolder%20oleh%20moona_mirrorbot/Promised.Hearts.2025.1080p.NF.WEB-DL.DDP5.1.Atmos.H.264-KQRM.mk"
+        curl -L -o video.mkv "https://tipistream.tipikuy.workers.dev/0:/MirrorFolder%20oleh%20moona_mirrorbot/Promised.Hearts.2025.1080p.NF.WEB-DL.DDP5.1.Atmos.H.264-KQRM.mkv"
 
     - name: Convert MKV to MP4
       run: |
