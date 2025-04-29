@@ -27,7 +27,7 @@ jobs:
 
     - name: Download MKV file
       run: |
-        curl -L -o video.mkv "https://tipigd.tipikus.workers.dev/0:/movieb/Aku.Jati.Aku.Asperger.2024.1080p.NF.WEB-DL.DDP5.1.H.264-KQRM.mkv"
+        curl -L -o video.mkv "https://database.s3cr3t.workers.dev/File.S3CR3T?IP%20Authentication=103.155.250.148&file=KyXzv%2BG4u%2Bu5%2F%2FtYUySt2iU5DrFULwBTco4vIGihki52ImnmGkgufxjGkiLcz9Ye&expiry=bV6wWQGm6%2FLpr36w%2F1njWg%3D%3D&mac=7cd909477ed9223c90d68c8efc481d4a15782a40cb588a07009daf898edf6026"
 
     - name: Convert MKV to MP4
       run: |
