@@ -27,7 +27,7 @@ jobs:
 
     - name: Download MKV file
       run: |
-        curl -L -o video.mkv "https://database.s3cr3t.workers.dev/3:/Movie%20%5BID%5D/Lukisan.Berlumur.Darah.1988.1080p.NF.WEB-DL.DDP2.0.H.264-S3CR3T.mkv"
+        curl -L -o video.mkv "https://tipigd.tipikus.workers.dev/0:/movieb/Lukisan.Berlumur.Darah.1988.1080p.NF.WEB-DL.DDP2.0.H.264-S3CR3T.mkv"
 
     - name: Convert MKV to MP4
       run: |
